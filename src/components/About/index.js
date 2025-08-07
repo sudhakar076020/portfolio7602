@@ -1,21 +1,26 @@
 import "./index.css";
 
+
 const About = () => {
   return (
     <div className="about-container">
-      <h1 className="about-title">About Me</h1>
-      <p>This is the about section of my portfolio.</p>
-      <p>
-        Here you can find information about my background, skills, and
-        interests.
-      </p>
-      <p>
-        Feel free to reach out if you have any questions or would like to
-        connect!
-      </p>
-      <p>Thank you for visiting my portfolio!</p>
-      <p>Stay tuned for more updates!</p>
-      <p>Have a great day!</p>
+      
+      <div class="section-title">
+        <div class="background-number">01</div>
+        <div class="title-text">About Me.</div>
+      </div>
+      <div className="about-content">
+        <p>
+          <span className="highlight">Hello! I'm Sudhakar</span>, a web
+          developer with a keen interest in creating dynamic and responsive web
+          applications. I love exploring new technologies and continuously
+          improving my skills.
+        </p>
+        <p>
+          In my free time, I enjoy contributing to open-source projects and
+          learning about the latest trends in web development.
+        </p>
+      </div>
     </div>
   );
 };

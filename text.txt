@@ -1,0 +1,1 @@
+npm install framer-motion => is a animated effects the content was visible 

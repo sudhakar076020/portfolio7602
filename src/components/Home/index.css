@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Jost:ital,wght@0,100..900;1,100..900&family=Libre+Barcode+39+Text&family=Orbitron:wght@900&family=Playwrite+VN+Guides&display=swap");
 
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+
 .banner-container {
   display: flex;
   flex-direction: row;
@@ -7,11 +15,12 @@
   align-items: flex-start;
   min-height: 100vh;
   overflow: hidden;
-  margin-top: 73px;
+  border: 2px solid #e7e7e7;
+  /* margin-top: 73px; */
 }
 
 .banner-content {
-  width: 50%;
+  width: 100%;
   max-width: 900px;
   height: 90vh;
   padding: 24px;
@@ -21,6 +30,7 @@
   align-items: flex-start;
   gap: 10px;
   background-color: #e7e7e7;
+  border: 2px solid #e7e7e7;
 }
 
 .greeting {
@@ -28,8 +38,7 @@
   color: #ed380b;
   text-align: left;
   letter-spacing: 1px;
-  font-family: "Jost", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Castoro", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -40,9 +49,8 @@
   font-weight: bold;
   color: #1b1b1b;
   text-align: left;
-  font-family: "Crimson Text", serif;
+  font-family: "Castoro", serif;
   font-weight: 400;
-  font-style: italic;
 }
 
 .home-buttons-card {
@@ -101,7 +109,7 @@
 .get-my-cv-sm-container .get-my-cv-btn,
 .get-my-cv-lg-container .get-my-cv-btn {
   color: #ffffff;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 1px;
   padding: 13px 16px;
@@ -195,14 +203,14 @@
     padding: 10px;
     justify-content: center;
     align-items: center;
-    margin-top: 64px;
+    /* margin-top: 64px; */
   }
 
   .banner-content {
     width: 100%;
     height: auto;
     padding: 15px;
-    /* margin-top: 85px; */
+    margin-top: 155px;
     background-color: transparent;
   }
 
@@ -213,7 +221,7 @@
 
   .name,
   .role {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     width: 100%;
     margin: 2px 0;

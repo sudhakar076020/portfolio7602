@@ -1,4 +1,5 @@
 import "./index.css";
+import { motion } from "framer-motion"; // Importing framer-motion for animations
 
 // React Icons
 import {
@@ -16,25 +17,39 @@ const Home = () => {
     <div className="home-container">
       <Navbar />
       <div className="banner-container">
-        <div className="banner-content">
-          <p className="greeting">Hello</p>
-          <h1 className="name">I'm Sudhakar</h1>
-          <p className="role">MERN Full Stack Web Developer</p>
-          <div className="home-buttons-card">
-            <button type="button" className="more-about-btn">
-              MORE ABOUT ME
-            </button>
-            <button type="button" className="get-in-touch-btn">
-              GET IN TOUCH
-            </button>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="banner-content">
+            <p className="greeting">Hello</p>
+            <h1 className="name">I'm Sudhakar</h1>
+            <p className="role">MERN Full Stack Web Developer</p>
+            <div className="home-buttons-card">
+              <button type="button" className="more-about-btn">
+                MORE ABOUT ME
+              </button>
+              <button type="button" className="get-in-touch-btn">
+                GET IN TOUCH
+              </button>
+            </div>
           </div>
-        </div>
+        </motion.div>
+
         <div className="get-my-cv-sm-container">
           <div className="horizontal-line"></div>
-          <button type="button" className="get-my-cv-btn">
-            GET MY CV
-          </button>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <button type="button" className="get-my-cv-btn">
+              GET MY CV
+            </button>
+          </motion.div>
         </div>
+
         <div className="banner-image">
           <div className="get-my-cv-lg-container">
             <div className="horizontal-lg-line"></div>
