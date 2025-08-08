@@ -15,7 +15,7 @@
   align-items: flex-start;
   min-height: 100vh;
   overflow: hidden;
-  border: 2px solid #e7e7e7;
+  /* border: 2px solid #e7e7e7; */
   /* margin-top: 73px; */
 }
 
@@ -133,7 +133,7 @@
 }
 
 .banner-image {
-  width: 50%;
+  width: 50vw;
   height: 90vh;
   object-fit: cover;
   object-position: center;
@@ -170,14 +170,15 @@
 
 .vertical-line {
   width: 1px;
-  height: 30%;
+  height: 100px; /* or another suitable fixed height */
   background-color: #e7e7e7;
+  margin-left: 50%;
+  margin-top: 10px;
 }
-
 /* Social media icons inside circle btn */
 .circle-btn {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
